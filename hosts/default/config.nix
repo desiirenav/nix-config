@@ -111,7 +111,6 @@
     (discord.override {
       withVencord = true;
     })
-    hyprpanel
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
