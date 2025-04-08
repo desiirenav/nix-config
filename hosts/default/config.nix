@@ -115,7 +115,6 @@
     grim
     slurp
     wl-clipboard
-    hyprpanel
     upower
     power-profiles-daemon
     nerd-fonts.jetbrains-mono

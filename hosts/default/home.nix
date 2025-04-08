@@ -7,7 +7,7 @@
   imports = [
     ./../../homeManagerModules/stylix.nix
     ./../../homeManagerModules/hyprland.nix
-    #./../../homeManagerModules/hyprpanel.nix
+    ./../../homeManagerModules/hyprpanel.nix
     ./../../homeManagerModules/starship/starship.nix
   ];
 
