@@ -54,7 +54,7 @@
         notification.scaling = 70;
         bar = {
           margin_bottom = "0em";
-          margin_sides = "16em";
+          margin_sides = "10em";
           margin_top = "0.5em";
           shadow = "1px 1px 12px 1px #000000";
           shadowMargins = "0px 1px 12px 1px";
