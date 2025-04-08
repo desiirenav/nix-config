@@ -15,42 +15,28 @@
     hyprland.enable = true;
     overwrite.enable = true;
     overlay.enable = true;
-    layout = {
-      "bar.layouts" = {
-        "0" = {
-          left = ["dashboard" "workspaces" "windowtitle"];
-          middle = ["media"];
-          right = ["volume" "network" "bluetooth" "systray" "clock" "notifications"];
-        };
-        "1" = {
-          left = ["dashboard" "workspaces" "windowtitle"];
-          middle = ["media"];
-          right = ["volume" "clock" "notifications"];
-        };
-      };
-    };
     settings = {
-      bar.launcher.icon = "󰌢"; # Updated icon for Rofi
-      menus.dashboard.shortcuts.left = {
-        shortcut1 = {
-          icon = "󰈹"; # Zen browser icon
-          tooltip = "Zen Browser";
-          command = "${pkgs.zen}/bin/zen";
-        };
-        shortcut2 = {
-          icon = "󰙯"; # Vencord/Discord icon
-          tooltip = "Vencord";
-          command = "${pkgs.vencord}/bin/vencord"; # Adjust package name if needed
-        };
-        shortcut3 = {
-          icon = "󰓇"; # Spotify icon
-          tooltip = "Spotify";
-          command = "${pkgs.spotify}/bin/spotify";
-        };
-        shortcut4 = {
-          icon = "󰌢"; # Rofi icon
-          tooltip = "Rofi Launcher";
-          command = "${pkgs.rofi}/bin/rofi";
+      bar.launcher.icon = "󱄅";
+      layout = {
+        "bar.layouts" = {
+          "*" = {
+            "left" = [
+              "dashboard"
+              "workspaces"
+              "windowtitle"
+            ];
+            "middle" = [
+              "media"
+            ];
+            "right" = [
+              "volume"
+              "battery"
+              "clock"
+              "network"
+              "systray"
+              "notifications"
+            ];
+          };
         };
       };
       theme = {
