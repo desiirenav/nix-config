@@ -94,6 +94,13 @@
   programs.hyprland.enable = true;
   programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
+  # Power
+  services.upower.enable = true;
+  services.power-profiles-daemon.enable = true;
+
+  # Bluetooth
+  hardware.bluetooth.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -108,6 +115,11 @@
     grim
     slurp
     wl-clipboard
+    hyprpanel
+    upower
+    power-profiles-daemon
+    nerd-fonts.jetbrains-mono
+    adwaita-icon-theme
     (discord.override {
       withVencord = true;
     })

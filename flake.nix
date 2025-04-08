@@ -16,10 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
-    #hyprpanel = {
-    #url = "github:Jas-SinghFSU/HyprPanel";
-    #inputs.nixpkgs.follows = "nixpkgs";
-    #};
+    hyprpanel = {
+      url = "github:Jas-SinghFSU/HyprPanel";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     nvf.url = "github:notashelf/nvf";
   };
@@ -29,7 +29,7 @@
     nixpkgs,
     stylix,
     nvf,
-    #hyprpanel,
+    hyprpanel,
     ...
   } @ inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -37,7 +37,7 @@
       modules = [
         ./hosts/default/config.nix
         inputs.home-manager.nixosModules.default
-        #{nixpkgs.overlays = [inputs.hyprpanel.overlay];}
+        {nixpkgs.overlays = [inputs.hyprpanel.overlay];}
       ];
     };
   };
