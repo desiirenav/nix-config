@@ -119,6 +119,7 @@
     power-profiles-daemon
     nerd-fonts.jetbrains-mono
     adwaita-icon-theme
+    gearlever
     (discord.override {
       withVencord = true;
     })
