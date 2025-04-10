@@ -15,6 +15,26 @@
     hyprland.enable = true;
     overwrite.enable = true;
     overlay.enable = true;
+    theme = "gruvbox";
+    layout = {
+      "bar.layouts" = {
+        "*" = {
+          "left" = [
+            "dashboard"
+          ];
+          "middle" = [
+            "workspaces"
+          ];
+          "right" = [
+            "volume"
+            "network"
+            "battery"
+            "clock"
+            "systray"
+          ];
+        };
+      };
+    };
     settings = {
       bar = {
         launcher.icon = "󱄅";
@@ -29,25 +49,6 @@
           hideCountWhenZero = false;
         };
       };
-      layout = {
-        "bar.layouts" = {
-          "*" = {
-            "left" = [
-              "dashboard"
-            ];
-            "middle" = [
-              "workspaces"
-            ];
-            "right" = [
-              "volume"
-              "network"
-              "battery"
-              "clock"
-              "systray"
-            ];
-          };
-        };
-      };
       theme = {
         osd.scaling = 70;
         tooltip.scaling = 70;
@@ -56,9 +57,6 @@
           margin_bottom = "0em";
           margin_sides = "20em";
           margin_top = "0.5em";
-          shadow = "1px 1px 12px 1px #000000";
-          shadowMargins = "0px 1px 12px 1px";
-          border_radius = "1.4em";
           floating = true;
           buttons = {
             background_opacity = 0;
