@@ -59,7 +59,7 @@
           margin_top = "0.5em";
           floating = true;
           buttons = {
-            background_opacity = 0;
+            background_opacity = 100;
           };
           scaling = 70;
           menus = {
