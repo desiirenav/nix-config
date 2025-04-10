@@ -5,7 +5,7 @@
   inputs,
   ...
 }: let
-  wallpaper = ./sunflower.png;
+  wallpaper = ./flower.jpg;
   mainMod = "SUPER";
   workspaceKeys = lib.range 1 9;
   workspaceSwitch = (map (num: "${mainMod}, ${toString num}, workspace, ${toString num}") workspaceKeys) ++ ["${mainMod}, 0, workspace, 10"];
@@ -60,7 +60,7 @@ in {
         resize_on_border = "no";
         allow_tearing = "no";
         layout = "dwindle";
-        "col.active_border" = "rgb(${config.stylix.base16Scheme.base0A})";
+        "col.active_border" = "rgb(${config.stylix.base16Scheme.base09})";
       };
 
       decoration = {

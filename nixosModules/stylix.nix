@@ -11,10 +11,10 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./sunflower.png;
+    image = ./flower.jpg;
     cursor = {
-      package = pkgs.rose-pine-cursor;
-      name = "BreezeX-RosePine-Linux";
+      package = pkgs.capitaine-cursors-themed;
+      name = "Capitaine Cursors (Gruvbox)";
       size = 24;
     };
     base16Scheme = {
@@ -47,6 +47,9 @@
       monospace = {
         package = inputs.apple-fonts.packages.${pkgs.system}.sf-mono-nerd;
         name = "SF Mono Nerd Font";
+      };
+      sizes = {
+        terminal = 12;
       };
     };
   };

@@ -15,7 +15,7 @@
     hyprland.enable = true;
     overwrite.enable = true;
     overlay.enable = true;
-    theme = "gruvbox";
+    theme = "gruvbox_vivid";
     layout = {
       "bar.layouts" = {
         "*" = {

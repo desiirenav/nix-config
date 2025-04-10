@@ -14,8 +14,8 @@
         statusline.lualine.theme = lib.mkForce "auto";
         theme = lib.mkForce {
           enable = true;
-          name = "rose-pine";
-          style = "main";
+          name = "gruvbox";
+          style = "dark";
         };
         statusline.lualine.enable = true;
         telescope.enable = true;
