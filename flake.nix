@@ -16,10 +16,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
-    hyprpanel = {
-      url = "github:Jas-SinghFSU/HyprPanel";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     nvf.url = "github:notashelf/nvf";
   };
