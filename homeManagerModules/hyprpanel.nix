@@ -21,16 +21,20 @@
         "*" = {
           "left" = [
             "dashboard"
+            "workspaces"
+            "media"
           ];
           "middle" = [
-            "workspaces"
+            "windowstitle"
           ];
           "right" = [
             "volume"
             "network"
+            "bluetooth"
             "battery"
             "clock"
             "systray"
+            "notifications"
           ];
         };
       };
@@ -55,8 +59,9 @@
         notification.scaling = 70;
         bar = {
           margin_bottom = "0em";
-          margin_sides = "20em";
           margin_top = "0.5em";
+          border_radius = "0.8em";
+          border.width = "0.15em";
           floating = true;
           buttons = {
             background_opacity = 100;

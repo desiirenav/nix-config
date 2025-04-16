@@ -114,6 +114,7 @@
     wl-clipboard
     upower
     power-profiles-daemon
+    ani-cli
     nerd-fonts.jetbrains-mono
     adwaita-icon-theme
     (discord.override {

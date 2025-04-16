@@ -16,8 +16,8 @@ in {
     settings = {
       confirm_os_window_close = 0;
       enable_audio_bell = false;
-      background_opacity = "1";
-      background_blur = 1;
+      background_opacity = "0.5";
+      background_blur = 5;
     };
   };
 
