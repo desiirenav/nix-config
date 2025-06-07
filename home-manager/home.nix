@@ -6,6 +6,7 @@
   ...
 }: {
   imports = [
+    ./../modules/home-manager/shell/shell.nix
   ];
 
   home.username = "narayan";

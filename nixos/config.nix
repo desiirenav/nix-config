@@ -54,6 +54,7 @@
     isNormalUser = true;
     description = "Narayan";
     extraGroups = ["networkmanager" "wheel"];
+    shell = pkgs.nushell;
     openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILGESSCczFQgd3hW82MUOni8XD31ZpNz8sct+u4npd7B narayan@nixos"];
     packages = with pkgs; [];
   }; 
