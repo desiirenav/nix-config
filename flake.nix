@@ -1,8 +1,15 @@
-# /mnt/etc/nixos/flake.nix
 {
   description = "My NixOS setup";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    niri.url = "github:sodiboo/niri-flake";
+    niri-unstable.url = "github:YaLTeR/niri";
+    nixcord.url = "github:kaylorben/nixcord";
+    ghostty.url = "github:ghostty-org/ghostty";
+    anyrun = {
+      url = "github:anyrun-org/anyrun";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,9 +19,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = inputs@{ self, nixpkgs, ... }: {
+  outputs = inputs@{ self, nixpkgs, anyrun, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      specialArgs = {inherit inputs;};
       modules = [ 
         ./nixos/config.nix
         inputs.disko.nixosModules.disko
