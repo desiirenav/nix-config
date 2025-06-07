@@ -6,6 +6,8 @@
     niri-unstable.url = "github:YaLTeR/niri";
     nixcord.url = "github:kaylorben/nixcord";
     ghostty.url = "github:ghostty-org/ghostty";
+    nvf.url = "github:notashelf/nvf";
+    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     anyrun = {
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,8 +20,12 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sf-mono-liga-src = {
+      url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
+      flake = false;
+    };
   };
-  outputs = inputs@{ self, nixpkgs, anyrun, ... }: {
+  outputs = inputs@{ self, nixpkgs, anyrun, nvf, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [ 
