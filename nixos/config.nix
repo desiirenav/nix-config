@@ -39,6 +39,7 @@
         layout = "us";
         variant = "";
       };
+      displayManager.gdm.enable = true;
     };
   };
 

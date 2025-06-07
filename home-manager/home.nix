@@ -11,7 +11,7 @@
     ./../modules/home-manager/packages/ghostty.nix
     ./../modules/home-manager/packages/nixcord.nix
     ./../modules/home-manager/packages/anyrun.nix
-  ]
+  ];
 
   home.username = "narayan";
   home.homeDirectory = "/home/narayan";

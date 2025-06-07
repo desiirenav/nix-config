@@ -19,8 +19,6 @@ in {
         focus-ring.enable = false;
         border = {
           enable = true;
-          active.gradient = {
-          };
           width = 3;
         };
         shadow = {
