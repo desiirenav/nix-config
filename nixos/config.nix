@@ -13,6 +13,7 @@
       ./../modules/nixos/packages/nvf.nix
       ./../modules/nixos/packages/gaming.nix
       ./../modules/nixos/packages/fonts.nix
+      ./../modules/nixos/stylix/stylix.nix
       ./../overlays/liga.nix
     ];
 

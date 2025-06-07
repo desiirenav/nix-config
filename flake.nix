@@ -8,6 +8,7 @@
     ghostty.url = "github:ghostty-org/ghostty";
     nvf.url = "github:notashelf/nvf";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
+    stylix.url = "github:danth/stylix";
     anyrun = {
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
