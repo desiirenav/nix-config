@@ -10,6 +10,10 @@
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
+    aagl = {
+      url = "github:ezKEa/aagl-gtk-on-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     anyrun = {
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -27,10 +31,11 @@
       flake = false;
     };
   };
-  outputs = inputs@{ self, nixpkgs, anyrun, nvf, ... }: {
+  outputs = inputs@{ self, nixpkgs, aagl, anyrun, nvf, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
-      modules = [ 
+      modules = [
+        {nix.settings = aagl.nixConfig;}
         ./nixos/config.nix
         inputs.disko.nixosModules.disko
 	inputs.home-manager.nixosModules.default

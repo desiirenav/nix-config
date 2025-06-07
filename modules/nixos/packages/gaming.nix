@@ -4,10 +4,14 @@
   inputs,
   ...
 }: {
+
+  imports = [ inputs.aagl.nixosModules.default ];
+
   environment.systemPackages = with pkgs; [
     mangohud
     osu-lazer-bin
     qbittorrent
+    heroic
   ];
 
   environment.sessionVariables = {
@@ -24,4 +28,7 @@
   };
 
   programs.gamemode.enable = true;
+        
+  programs.anime-game-launcher.enable = true;
+
 }
