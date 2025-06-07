@@ -9,6 +9,7 @@
     nvf.url = "github:notashelf/nvf";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
     anyrun = {
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -13,6 +13,7 @@
       ./../modules/nixos/packages/nvf.nix
       ./../modules/nixos/packages/gaming.nix
       ./../modules/nixos/packages/fonts.nix
+      ./../modules/nixos/packages/flatpak.nix
       ./../modules/nixos/stylix/stylix.nix
       ./../overlays/liga.nix
     ];
@@ -91,8 +92,14 @@
 
   # Packages
   environment.systemPackages = with pkgs; [
-    neovim
     yazi
+    typst
+    zathura
+    ani-cli
+    unzip
+    unrar
+    pfetch
+    nitch
     fastfetch
     librewolf
     adwaita-icon-theme
