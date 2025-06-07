@@ -10,7 +10,7 @@
     ./../modules/home-manager/niri/default.nix
     ./../modules/home-manager/packages/ghostty.nix
     ./../modules/home-manager/packages/nixcord.nix
-    ./../modules/home-manager/packages/anyrun.nix
+    ./../modules/home-manager/packages/fuzzel.nix
     ./../modules/home-manager/stylix/stylix.nix
   ];
 
