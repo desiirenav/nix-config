@@ -10,6 +10,10 @@
       ./hardware.nix
       ./../modules/nixos/hardware/disko-config.nix
       ./../modules/nixos/hardware/nvidia.nix
+      ./../modules/nixos/packages/nvf.nix
+      ./../modules/nixos/packages/gaming.nix
+      ./../modules/nixos/packages/fonts.nix
+      ./../overlays/liga.nix
     ];
 
   nixpkgs.overlays = [inputs.niri.overlays.niri];
@@ -34,12 +38,12 @@
 
   # Services
   services = {
+    displayManager.gdm.enable = true;
     xserver = {
       xkb = {
         layout = "us";
         variant = "";
       };
-      displayManager.gdm.enable = true;
     };
   };
 
@@ -76,7 +80,6 @@
   # Flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-
   # Niri
   programs.niri = {
     enable = true;
@@ -91,6 +94,7 @@
     yazi
     fastfetch
     librewolf
+    adwaita-icon-theme
   ];
 
   # OpenSSH daemon.
