@@ -5,6 +5,8 @@
   lib,
   ...
 }: let
+  wallpaper = "${./../stylix/bird.png}";
+  colors = config.lib.stylix.colors.withHashtag;
 in {
   programs.niri = {
     settings = {
@@ -19,6 +21,10 @@ in {
         focus-ring.enable = false;
         border = {
           enable = true;
+          active.gradient = {
+            from = colors.base0F;
+            to = colors.base0F;
+          };
           width = 3;
         };
         shadow = {
@@ -28,6 +34,9 @@ in {
       spawn-at-startup = [
         {
           command = ["xwayland-satellite"];
+        }
+        {
+          command = ["swaybg" "-m" "fill" "-i" wallpaper];
         }
         {
           command = ["dunst"];
