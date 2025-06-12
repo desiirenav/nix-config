@@ -21,6 +21,9 @@
         "Games"
         ".ssh"
         ".local/share/Steam"
+                                #        ".var/app/com.usebottles.bottles"
+                                #        ".var/app/com.github.tchx84.Flatseal"
+                                #        ".local/share/bottles"
         ".config/discord"
         ".config/Vencord"
       ];
