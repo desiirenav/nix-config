@@ -10,7 +10,7 @@
     ./../../overlays/liga.nix
   ];
 
-  #nixpkgs.overlays = [inputs.niri.overlays.niri];
+  nixpkgs.overlays = [inputs.niri.overlays.niri];
   
   # Host name
   networking.hostName = "nixos";
@@ -21,6 +21,7 @@
   # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
 
   # NTFS
   boot.supportedFilesystems = ["ntfs"];
@@ -70,14 +71,14 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Niri
-  #programs.niri = {
-  #  enable = true;
-  #  package = pkgs.niri-unstable;
-  #};
+  programs.niri = {
+    enable = true;
+    package = pkgs.niri-unstable;
+  };
 
   # Hyprland
-  programs.hyprland.enable = true;
-  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+        #programs.hyprland.enable = true;
+        #programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
   # Packages
   environment.systemPackages = with pkgs; [

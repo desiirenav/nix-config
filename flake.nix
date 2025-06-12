@@ -5,9 +5,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    #niri.url = "github:sodiboo/niri-flake";
-    #niri-unstable.url = "github:YaLTeR/niri";
-    hyprland.url = "github:hyprwm/Hyprland";
+    niri.url = "github:sodiboo/niri-flake";
+    niri-unstable.url = "github:YaLTeR/niri";
+                #hyprland.url = "github:hyprwm/Hyprland";
     impermanence.url = "github:nix-community/impermanence";
     nixcord.url = "github:kaylorben/nixcord";
     ghostty.url = "github:ghostty-org/ghostty";
