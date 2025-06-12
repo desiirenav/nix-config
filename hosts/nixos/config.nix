@@ -1,0 +1,113 @@
+{ inputs, pkgs, lib, config, ... }: {
+  imports = [
+    ./../../nixosModules/hardware/hardware-configuration.nix
+    ./../../nixosModules/hardware/persist.nix
+    ./../../nixosModules/hardware/nvidia.nix
+    ./../../nixosModules/packages/nvf.nix
+    ./../../nixosModules/packages/gaming.nix
+    ./../../nixosModules/packages/fonts.nix
+    ./../../nixosModules/stylix/stylix.nix
+    ./../../overlays/liga.nix
+  ];
+
+  #nixpkgs.overlays = [inputs.niri.overlays.niri];
+  
+  # Host name
+  networking.hostName = "nixos";
+  
+  # Network
+  networking.networkmanager.enable = true;
+
+  # Bootloader
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  # NTFS
+  boot.supportedFilesystems = ["ntfs"];
+
+  # Time
+  time.timeZone = "Canada/Eastern";
+
+  # Bluetooth
+  hardware.bluetooth.enable = true;
+
+  # Sound via PipeWire
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
+
+  # Users
+  users.mutableUsers = false;
+  users.users = {
+    root.hashedPasswordFile = "/nix/persist/passwords/root";
+    narayan = {
+      isNormalUser = true;
+      description = "Narayan";
+      extraGroups = [ "wheel" "networkmanager" ];
+      hashedPasswordFile = "/nix/persist/passwords/narayan";
+      shell = pkgs.nushell;
+    };
+  };
+
+  # Home-manager
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users = {
+      "narayan" = import ./home.nix;
+    };
+  };
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
+  # Flakes
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  # Niri
+  #programs.niri = {
+  #  enable = true;
+  #  package = pkgs.niri-unstable;
+  #};
+
+  # Hyprland
+  programs.hyprland.enable = true;
+  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+
+  # Packages
+  environment.systemPackages = with pkgs; [
+    yazi
+    typst
+    zathura
+    ani-cli
+    unzip
+    unrar
+    pfetch
+    nitch
+    fastfetch
+    librewolf
+    calibre
+    brightnessctl
+    adwaita-icon-theme
+  ];
+
+  # OpenSSH daemon.
+  services.openssh.enable = true;
+
+  # Autoclean
+  nix = {
+    settings.auto-optimise-store = true;
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+  };
+
+  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
+  system.stateVersion = "25.11";
+}
