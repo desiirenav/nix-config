@@ -23,6 +23,7 @@
           enableFormat = true;
           enableTreesitter = true;
           nix.enable = true;
+          lua.enable = true;
           typst = {
             enable = true;
             extensions.typst-preview-nvim.enable = true;
