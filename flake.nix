@@ -14,13 +14,20 @@
     nvf.url = "github:notashelf/nvf";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
+    astal = {
+      url = "github:aylur/astal";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, ... }: {
+  outputs = inputs@{ self, nixpkgs, astal, ... }: let 
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system}; 
+  in {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
@@ -31,5 +38,23 @@
         ];
       };
     };
+    packages.${system}.default = astal.lib.mkLuaPackage {
+      inherit pkgs;
+      name = "astal";
+      src = ./packages/astal;
+
+      extraPackages = with astal.packages.${system};
+        [
+          battery
+        ]
+        ++ (with pkgs; [
+          dart-sass
+        ])
+        ++ (with pkgs.lua52Packages; [
+          cjson
+          luautf8
+        ]);
+     };
+  };
   };
 }
