@@ -17,14 +17,10 @@ in {
       };
       prefer-no-csd = true;
       layout = {
-        gaps = 9;
+        gaps = 0;
         focus-ring.enable = false;
         border = {
-          enable = true;
-          active.gradient = {
-            from = colors.base0F;
-            to = colors.base0F;
-          };
+          enable = false;
           width = 3;
         };
         shadow = {

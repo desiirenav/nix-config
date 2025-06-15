@@ -95,7 +95,6 @@
     calibre
     brightnessctl
     adwaita-icon-theme
-    lua
   ];
 
   # OpenSSH daemon.
