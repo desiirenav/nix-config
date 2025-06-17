@@ -8,7 +8,7 @@
   imports = [
     ./../../homeManagerModules/shell/shell.nix
     ./../../homeManagerModules/niri/default.nix
-                #./../../homeManagerModules/hypr/hyprland.nix
+    ./../../homeManagerModules/hypr/hyprland.nix
                 #    ./../../homeManagerModules/packages/ghostty.nix
     ./../../homeManagerModules/packages/kitty.nix
     ./../../homeManagerModules/packages/rofi.nix

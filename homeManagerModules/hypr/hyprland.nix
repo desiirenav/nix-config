@@ -35,10 +35,7 @@ in {
         resize_on_border = "no";
         allow_tearing = "no";
         layout = "dwindle";
-        "col.active_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base0B}ff) rgba(${config.stylix.base16Scheme.base09}ff) 45deg";
-        "col.inactive_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base00}ff)";
       };
-
       decoration = {
         rounding = 1;
         active_opacity = "1.0";
