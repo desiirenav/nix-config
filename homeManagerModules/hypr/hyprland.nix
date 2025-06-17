@@ -5,7 +5,7 @@
   inputs,
   ...
 }: let
-  wallpaper = ./../stylix/clouds.jpg;
+  wallpaper = ./../stylix/nord.jpg;
   mainMod = "SUPER";
   workspaceKeys = lib.range 1 9;
   workspaceSwitch = (map (num: "${mainMod}, ${toString num}, workspace, ${toString num}") workspaceKeys) ++ ["${mainMod}, 0, workspace, 10"];
@@ -119,7 +119,7 @@ in {
         workspaceSwitch
         ++ moveToWorkspace
         ++ [
-          "$mod, RETURN, exec, ghostty"
+          "$mod, RETURN, exec, kitty"
           "$mod, Q, killactive"
           "$mod, M, exit"
           "$mod, X, exec, fuzzel"
