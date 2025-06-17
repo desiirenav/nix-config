@@ -1,5 +1,5 @@
 {
-  description = "An example of a configured misterio77/nix-starter-config for impermanence";
+  description = "nix config with flake, hm and impermanence";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
