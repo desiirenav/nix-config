@@ -17,7 +17,7 @@ in {
       };
       prefer-no-csd = true;
       layout = {
-        gaps = 18;
+        gaps = 9;
         focus-ring.enable = false;
         border = {
           enable = true;

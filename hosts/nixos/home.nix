@@ -13,7 +13,7 @@
     ./../../homeManagerModules/packages/kitty.nix
     ./../../homeManagerModules/packages/rofi.nix
     ./../../homeManagerModules/packages/nixcord.nix
-                #./../../homeManagerModules/packages/fuzzel.nix
+    ./../../homeManagerModules/packages/fuzzel.nix
     ./../../homeManagerModules/stylix/stylix.nix
   ];
 
