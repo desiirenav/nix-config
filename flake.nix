@@ -10,7 +10,7 @@
     impermanence.url = "github:nix-community/impermanence";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     nixcord.url = "github:kaylorben/nixcord";
-    ghostty.url = "github:ghostty-org/ghostty";
+                #    ghostty.url = "github:ghostty-org/ghostty";
     nvf.url = "github:notashelf/nvf";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";

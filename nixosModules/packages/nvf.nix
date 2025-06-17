@@ -11,13 +11,11 @@
     enable = true;
     settings = {
       vim = lib.mkForce {
-        mini.statusline.enable = true;
         telescope.enable = true;
         autocomplete.nvim-cmp.enable = true;
         lsp.enable = true;
         theme = {
-          name = "rose-pine";
-          style = "dawn";
+          name = "nord";
         };
         languages = {
           enableFormat = true;

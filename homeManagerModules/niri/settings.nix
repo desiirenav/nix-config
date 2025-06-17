@@ -17,14 +17,18 @@ in {
       };
       prefer-no-csd = true;
       layout = {
-        gaps = 0;
+        gaps = 9;
         focus-ring.enable = false;
         border = {
           enable = true;
-          width = 3;
+          width = 1;
+          active.gradient = {
+            from = colors.base0F;
+            to = colors.base0F;
+          };
         };
         shadow = {
-          enable = false;
+          enable = true;
         };
       };
       spawn-at-startup = [

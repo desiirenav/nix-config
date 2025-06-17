@@ -92,7 +92,6 @@
     nitch
     fastfetch
     librewolf
-    calibre
     brightnessctl
     adwaita-icon-theme
   ];

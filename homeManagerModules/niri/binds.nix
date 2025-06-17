@@ -14,7 +14,7 @@
         "XF86MonBrightnessDown".action = spawn "sh" "-c" "brightnessctl set 10%-";
         "Print".action.screenshot-screen = {write-to-disk = true;};
         "Mod+X".action = spawn "fuzzel";
-        "Mod+Return".action = spawn "ghostty";
+        "Mod+Return".action = spawn "kitty";
         "Mod+1".action = focus-workspace 1;
         "Mod+2".action = focus-workspace 2;
         "Mod+3".action = focus-workspace 3;
