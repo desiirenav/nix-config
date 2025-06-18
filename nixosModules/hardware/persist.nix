@@ -23,6 +23,8 @@
         ".local/share/Steam"
         ".config/discord"
         ".config/Vencord"
+        ".local/share/flatpak"
+        ".var/app/"
       ];
       files = [
         ".bash_history"

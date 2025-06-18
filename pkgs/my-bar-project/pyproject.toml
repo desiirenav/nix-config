@@ -10,7 +10,7 @@ authors = [
 ]
 maintainers = [
 ]
-description = "Fabric using Nix example."
+description = "Fabric widgets"
 readme = "README.md"
 license = {file = "LICENSE"}
 
