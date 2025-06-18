@@ -10,7 +10,7 @@
     ./../../homeManagerModules/niri/default.nix
     ./../../homeManagerModules/hypr/hyprland.nix
                 #    ./../../homeManagerModules/packages/ghostty.nix 
-    ./../../homeManagerModules/packages/browser.nix
+                #./../../homeManagerModules/packages/browser.nix
     ./../../homeManagerModules/packages/kitty.nix
     ./../../homeManagerModules/packages/rofi.nix
     ./../../homeManagerModules/packages/nixcord.nix
