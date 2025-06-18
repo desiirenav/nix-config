@@ -10,6 +10,10 @@
     impermanence.url = "github:nix-community/impermanence";
     hyprland.url = "github:hyprwm/Hyprland";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixcord.url = "github:kaylorben/nixcord";
                 #    ghostty.url = "github:ghostty-org/ghostty";
     nvf.url = "github:notashelf/nvf";
