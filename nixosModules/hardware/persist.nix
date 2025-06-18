@@ -1,5 +1,6 @@
 # https://github.com/nix-community/impermanence#module-usage
 {
+
   environment.persistence."/nix/persist" = {
     hideMounts = true;
     directories = [
@@ -7,6 +8,7 @@
       "/var/lib/nixos"
       "/var/lib/systemd/coredump"
       "/etc/NetworkManager/system-connections"
+      "/var/lib/flatpak"
     ];
     files = [
       "/etc/machine-id"
@@ -20,11 +22,12 @@
         "Videos"
         "Games"
         ".ssh"
+        ".cache/flatpak"
+        ".local/share/flatpak"
         ".local/share/Steam"
         ".config/discord"
         ".config/Vencord"
-        ".local/share/flatpak"
-        ".var/app/"
+        ".var/app"
       ];
       files = [
         ".bash_history"
