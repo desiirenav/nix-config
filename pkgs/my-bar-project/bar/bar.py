@@ -1,5 +1,3 @@
-# fabric bar.py example
-# https://github.com/Fabric-Development/fabric/blob/rewrite/examples/bar/bar.py
 import psutil
 from fabric import Application
 from fabric.widgets.box import Box
@@ -11,7 +9,6 @@ from fabric.widgets.centerbox import CenterBox
 from fabric.system_tray.widgets import SystemTray
 from fabric.widgets.circularprogressbar import CircularProgressBar
 from fabric.widgets.wayland import WaylandWindow as Window
-from fabric.hyprland.widgets import Language, ActiveWindow, Workspaces, WorkspaceButton
 from fabric.utils import (
     FormattedString,
     bulk_replace,
@@ -84,24 +81,7 @@ class StatusBar(Window):
             visible=False,
             all_visible=False,
         )
-        self.workspaces = Workspaces(
-            name="workspaces",
-            spacing=4,
-            buttons_factory=lambda ws_id: WorkspaceButton(id=ws_id, label=None),
-        )
-        self.active_window = ActiveWindow(name="hyprland-window")
-        self.language = Language(
-            formatter=FormattedString(
-                "{replace_lang(language)}",
-                replace_lang=lambda lang: bulk_replace(
-                    lang,
-                    (r".*Eng.*", r".*Ar.*"),
-                    ("ENG", "ARA"),
-                    regex=True,
-                ),
-            ),
-            name="hyprland-window",
-        )
+      
         self.date_time = DateTime(name="date-time")
         self.system_tray = SystemTray(name="system-tray", spacing=4)
 
