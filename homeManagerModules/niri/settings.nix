@@ -5,7 +5,7 @@
   lib,
   ...
 }: let
-  wallpaper = "${./../stylix/colors.png}";
+  wallpaper = "${./../stylix/wave.jpg}";
   colors = config.lib.stylix.colors.withHashtag;
 in {
   programs.niri = {
@@ -21,14 +21,15 @@ in {
         focus-ring.enable = false;
         border = {
           enable = true;
-          width = 1;
+          width = 3;
           active.gradient = {
-            from = colors.base0F;
+            from = colors.base0E;
             to = colors.base0F;
           };
         };
         shadow = {
           enable = true;
+          color = "#f38ba800";
         };
       };
       spawn-at-startup = [
