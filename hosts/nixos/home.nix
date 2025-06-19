@@ -8,9 +8,7 @@
   imports = [
     ./../../homeManagerModules/shell/shell.nix
     ./../../homeManagerModules/niri/default.nix
-                #./../../homeManagerModules/hypr/hyprland.nix
-    ./../../homeManagerModules/packages/wezterm/wezterm.nix 
-                #./../../homeManagerModules/packages/browser.nix
+    ./../../homeManagerModules/packages/wezterm.nix 
     ./../../homeManagerModules/packages/kitty.nix
     ./../../homeManagerModules/packages/rofi.nix
     ./../../homeManagerModules/packages/nixcord.nix
