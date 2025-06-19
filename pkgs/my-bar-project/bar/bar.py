@@ -1,5 +1,6 @@
 import fabric
 from fabric import Application
+from fabric.widgets.box import Box
 from fabric.widgets.datetime import DateTime
 from fabric.widgets.centerbox import CenterBox
 from fabric.widgets.wayland import WaylandWindow as Window
@@ -13,8 +14,31 @@ class StatusBar(Window):
             **kwargs
         )
 
-        self.date_time = DateTime()
-        self.children = CenterBox(center_children=self.date_time)
+        self.date_time = DateTime(name="date-time")
+
+        self.children = CenterBox(
+            name="bar-inner",
+            start_children=Box(
+                name="start-container",
+                spacing=4,
+                orientation="h",
+                children=[],
+            ),
+            center_children=Box(
+                name="center-container",
+                spacing=4,
+                orientation="h",
+                children=[],
+            ),
+            end_children=Box(
+                name="end-container",
+                spacing=4,
+                orientation="h",
+                children=[
+                    self.date_time,
+                ],
+            ),
+        )
 
 def main():
     bar = StatusBar()
