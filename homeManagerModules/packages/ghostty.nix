@@ -8,8 +8,9 @@
 
   xdg.configFile."ghostty/config".text = ''
     theme = ayu
-    font-family = Liga SFMono Nerd Font
+    font-family = Ubuntu Sans Font
     font-size = 12
-    font-thicken = true
+    font-feature = calt
+    font-feature = ss03 
   '';
 }
