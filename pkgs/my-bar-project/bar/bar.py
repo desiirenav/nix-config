@@ -76,7 +76,7 @@ class StatusBar(Window):
             name="bar",
             layer="top",
             anchor="left top right",
-            margin="10px 10px -2px 10px",
+            margin="0px 0px -2px 0px",
             exclusivity="auto",
             visible=False,
             all_visible=False,

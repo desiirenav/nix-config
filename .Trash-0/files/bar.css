@@ -1,28 +1,22 @@
-/* Fabric bar.css
- * https://github.com/Fabric-Development/fabric/blob/rewrite/examples/bar/bar.css
- */
-
-/* we can use webcss variables, fabric compiles that to gtk css.
-   global variables can be stored in :vars */
 :vars {
-    --background: #2E3440;
-    --foreground: #E5E9F0;
-    --color0: #2E3440;
-    --color1: #BF616A;
-    --color2: #D08770;
-    --color3: #EBCB8B;
-    --color4: #5E81AC;
-    --color5: #A3BE8C;
-    --color6: #B48EAD;
-    --color7: #E5E9F0;
-    --color8: #4C566A;
-    --color9: #BF616A;
-    --color10: #D08770;
-    --color11: #EBCB8B;
-    --color12: #5E81AC;
-    --color13: #A3BE8C;
-    --color14: #B48EAD;
-    --color15: #ECEFF4;
+    --background: #150d16;
+    --foreground: #f5dbc4;
+    --color0: #150d16;
+    --color1: #72448D;
+    --color2: #9C5995;
+    --color3: #D5719F;
+    --color4: #9A62F3;
+    --color5: #E075DF;
+    --color6: #F98F9F;
+    --color7: #f5dbc4;
+    --color8: #ab9989;
+    --color9: #72448D;
+    --color10: #9C5995;
+    --color11: #D5719F;
+    --color12: #9A62F3;
+    --color13: #E075DF;
+    --color14: #F98F9F;
+    --color15: #f5dbc4;
     --window-bg: alpha(var(--background), 0.6);
     --module-bg: alpha(var(--background), 0.4);
     --border-color: var(--color11);
@@ -54,47 +48,11 @@ button {
     min-height: 28px;
 }
 
-#workspaces {
-    padding: 6px;
-    min-width: 0px;
-    background-color: var(--module-bg);
-}
-
-#workspaces>button {
-    padding: 0px 8px;
-    transition: padding 0.05s steps(8);
-    background-color: var(--ws-inactive);
-}
-
-#workspaces>button>label {
-    font-size: 0px;
-}
-
-#workspaces>button:hover {
-    background-color: var(--ws-hover);
-}
-
-#workspaces>button.urgent {
-    background-color: var(--ws-urgent);
-}
-
-#workspaces>button.active {
-    padding: 0px 32px;
-    background-color: var(--ws-active);
-}
-
-#workspaces>button.empty {
-    background-color: var(--ws-empty);
-}
-
-
 #date-time,
-#hyprland-language,
 
 
 menu>menuitem>label,
 #date-time>label,
-#hyprland-language>label,
 
 
 /* system tray */
