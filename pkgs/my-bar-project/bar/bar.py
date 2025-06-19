@@ -113,13 +113,13 @@ class StatusBar(Window):
                 name="start-container",
                 spacing=4,
                 orientation="h",
-                children=self.workspaces,
+                children=[],
             ),
             center_children=Box(
                 name="center-container",
                 spacing=4,
                 orientation="h",
-                children=self.active_window,
+                children=[],
             ),
             end_children=Box(
                 name="end-container",
@@ -129,7 +129,6 @@ class StatusBar(Window):
                     self.status_container,
                     self.system_tray,
                     self.date_time,
-                    self.language,
                 ],
             ),
         )
