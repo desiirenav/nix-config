@@ -91,6 +91,7 @@
     unrar
     pfetch
     nitch
+    calibre
     fastfetch
     librewolf
     brightnessctl
