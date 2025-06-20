@@ -12,6 +12,8 @@
     ./../../homeManagerModules/packages/rofi.nix
     ./../../homeManagerModules/packages/nixcord.nix
     ./../../homeManagerModules/packages/fuzzel.nix
+    ./../../homeManagerModules/packages/nixcord.nix
+    ./../../homeManagerModules/packages/neovim.nix
     ./../../homeManagerModules/stylix/stylix.nix
   ];
 
@@ -30,7 +32,9 @@
   };
 
   nixpkgs.config.allowUnfree = true;
- 
+
+  environment.variables.EDITOR = "nvim";
+
   home.file = {
   };
 
