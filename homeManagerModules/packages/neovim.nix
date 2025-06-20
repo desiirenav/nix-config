@@ -6,9 +6,15 @@
   ...
 }: {
   programs.neovim = {
+    enable = true;
     viAlias = true;
     vimAlias = true;
-    plugins = [
+    extraConfig = ''
+      set number relativenumber
+    '';
+    plugins = with pkgs.vimPlugins ;[
+      nvim-treesitter
+      neovim-ayu
     ];
   };
 }
