@@ -4,6 +4,5 @@
     league-spartan
     fira-math
     texlivePackages.lete-sans-math
-    nerd-fonts.ubuntu-sans
   ];
 }

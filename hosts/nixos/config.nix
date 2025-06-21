@@ -7,6 +7,7 @@
     ./../../nixosModules/packages/flatpak.nix
     ./../../nixosModules/packages/fonts.nix
     ./../../nixosModules/stylix/stylix.nix
+    ./../../nixosModules/packages/neovim.nix
     ./../../overlays/liga.nix
   ];
 
@@ -85,12 +86,10 @@
     ani-cli
     unzip
     unrar
-    pfetch
-    nitch
     calibre
-    fastfetch
     librewolf
     brightnessctl
+    vim
     adwaita-icon-theme
   ];
 
