@@ -7,7 +7,6 @@
     ./../../nixosModules/packages/flatpak.nix
     ./../../nixosModules/packages/fonts.nix
     ./../../nixosModules/stylix/stylix.nix
-    ./../../nixosModules/packages/neovim.nix
     ./../../overlays/liga.nix
   ];
 

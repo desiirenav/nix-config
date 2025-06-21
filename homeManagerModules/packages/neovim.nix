@@ -9,8 +9,9 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    customRC = ''
-      set number
+    vimdiffAlias = true;
+    extraConfig = ''
+      set number relativenumber
     '';
     plugins = with pkgs.vimPlugins ;[
       nvim-treesitter
