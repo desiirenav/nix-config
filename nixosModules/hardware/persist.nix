@@ -22,6 +22,7 @@
         "Videos"
         "Games"
         ".ssh"
+	".librewolf"
         ".cache/flatpak"
         ".local/share/flatpak"
         ".local/share/Steam"
@@ -29,6 +30,7 @@
         ".config/Vencord"
 	".config/nushell"
         ".var/app"
+	".zen"
       ];
       files = [
         ".bash_history"
