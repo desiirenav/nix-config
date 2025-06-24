@@ -27,6 +27,7 @@
         ".local/share/Steam"
         ".config/discord"
         ".config/Vencord"
+	".config/nushell"
         ".var/app"
       ];
       files = [
