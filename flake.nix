@@ -11,6 +11,7 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     nixcord.url = "github:kaylorben/nixcord";
     nixvim.url = "github:nix-community/nixvim";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
     sf-mono-liga-src = {

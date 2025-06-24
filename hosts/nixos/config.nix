@@ -7,6 +7,7 @@
     ./../../nixosModules/packages/flatpak.nix
     ./../../nixosModules/packages/fonts.nix
     ./../../nixosModules/packages/nixvim.nix
+    ./../../nixosModules/packages/browser.nix
     ./../../nixosModules/stylix/stylix.nix
     ./../../overlays/liga.nix
   ];
@@ -77,7 +78,6 @@
     package = pkgs.niri-unstable;
   };
 
-
   # Packages
   environment.systemPackages = with pkgs; [
     yazi
@@ -87,7 +87,6 @@
     unzip
     unrar
     calibre
-    librewolf
     brightnessctl
     adwaita-icon-theme
   ];
