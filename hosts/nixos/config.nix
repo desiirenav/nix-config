@@ -86,9 +86,9 @@
     unzip
     unrar
     calibre
+    neovim
     librewolf
     brightnessctl
-    vim
     adwaita-icon-theme
   ];
 
