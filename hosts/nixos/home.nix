@@ -12,6 +12,8 @@
     ./../../homeManagerModules/packages/rofi.nix
     ./../../homeManagerModules/packages/nixcord.nix
     ./../../homeManagerModules/packages/fuzzel.nix
+    ./../../homeManagerModules/packages/fuzzel.nix
+    ./../../homeManagerModules/packages/ghostty.nix
     ./../../homeManagerModules/packages/nixcord.nix
     ./../../homeManagerModules/stylix/stylix.nix
   ];
