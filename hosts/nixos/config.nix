@@ -87,6 +87,8 @@
     unzip
     unrar
     calibre
+    fastfetch
+    pfetch
     brightnessctl
     adwaita-icon-theme
   ];

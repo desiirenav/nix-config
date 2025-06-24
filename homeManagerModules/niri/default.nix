@@ -19,5 +19,6 @@
     swaybg
     dunst
     nautilus
+    adwaita-icon-theme
   ];
 }

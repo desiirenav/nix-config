@@ -6,5 +6,8 @@
 }: {
   programs.ghostty = {
     enable = true;
+    settings = {
+      font-style = "medium";
+    };
   };
 }

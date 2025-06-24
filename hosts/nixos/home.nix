@@ -8,7 +8,6 @@
   imports = [
     ./../../homeManagerModules/shell/shell.nix
     ./../../homeManagerModules/niri/default.nix
-    ./../../homeManagerModules/packages/kitty.nix
     ./../../homeManagerModules/packages/rofi.nix
     ./../../homeManagerModules/packages/nixcord.nix
     ./../../homeManagerModules/packages/fuzzel.nix
