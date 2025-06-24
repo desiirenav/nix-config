@@ -6,6 +6,7 @@
     ./../../nixosModules/packages/gaming.nix
     ./../../nixosModules/packages/flatpak.nix
     ./../../nixosModules/packages/fonts.nix
+    ./../../nixosModules/packages/nixvim.nix
     ./../../nixosModules/stylix/stylix.nix
     ./../../overlays/liga.nix
   ];
@@ -86,7 +87,6 @@
     unzip
     unrar
     calibre
-    neovim
     librewolf
     brightnessctl
     adwaita-icon-theme
