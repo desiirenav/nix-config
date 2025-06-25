@@ -11,10 +11,6 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    globalOpts = {
-      number = true;
-      relativenumber = true;
-    };
     colorschemes.ayu.enable = true;
     plugins = {
       lualine.enable = true;

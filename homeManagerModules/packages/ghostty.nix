@@ -1,13 +1,17 @@
 {
+  lib,
   inputs,
   pkgs,
   config,
   ...
 }: {
-  programs.ghostty = {
+  programs.ghostty = lib.mkForce {
     enable = true;
     settings = {
-      font-style = "medium";
+      theme = "ayu";
+      font-family = "Liga SFMono Nerd Font";
+      font-size = 12;
+      font-style = "semibold";
     };
   };
 }

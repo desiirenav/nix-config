@@ -12,6 +12,11 @@
     autoEnable = true;
     enable = true;
     image = ./night.jpg;
+    cursor = {
+      package = pkgs.phinger-cursors;
+      name = "phinger-cursors-dark";
+      size = 22;
+    };
     base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
     fonts = {
       serif = {

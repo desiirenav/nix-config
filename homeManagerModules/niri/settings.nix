@@ -21,15 +21,14 @@ in {
         focus-ring.enable = false;
         border = {
           enable = true;
-          width = 3;
+          width = 1.5;
           active.gradient = {
-            from = colors.base0E;
-            to = colors.base0F;
+            from = colors.base03;
+            to = colors.base03;
           };
         };
         shadow = {
           enable = true;
-          color = "#f38ba800";
         };
       };
       spawn-at-startup = [

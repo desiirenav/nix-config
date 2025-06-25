@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   inputs,
   system,
@@ -8,7 +9,6 @@
   imports = [
     ./../../homeManagerModules/shell/shell.nix
     ./../../homeManagerModules/niri/default.nix
-    ./../../homeManagerModules/packages/rofi.nix
     ./../../homeManagerModules/packages/nixcord.nix
     ./../../homeManagerModules/packages/fuzzel.nix
     ./../../homeManagerModules/packages/fuzzel.nix

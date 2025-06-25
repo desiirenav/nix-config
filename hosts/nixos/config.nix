@@ -86,11 +86,9 @@
     ani-cli
     unzip
     unrar
-    calibre
     fastfetch
+    nitch
     pfetch
-    brightnessctl
-    adwaita-icon-theme
   ];
 
   # OpenSSH daemon.
