@@ -7,7 +7,6 @@
   ...
 }: {
   imports = [
-    ./../../homeManagerModules/shell/shell.nix
     ./../../homeManagerModules/niri/default.nix
     ./../../homeManagerModules/packages/nixcord.nix
     ./../../homeManagerModules/packages/fuzzel.nix

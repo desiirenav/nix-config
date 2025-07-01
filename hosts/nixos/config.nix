@@ -5,6 +5,7 @@
     ./../../nixosModules/hardware/nvidia.nix
     ./../../nixosModules/packages/gaming.nix
     ./../../nixosModules/packages/fonts.nix
+    ./../../nixosModules/packages/flatpak.nix
     ./../../nixosModules/packages/nixvim.nix
     ./../../nixosModules/stylix/stylix.nix
     ./../../overlays/liga.nix

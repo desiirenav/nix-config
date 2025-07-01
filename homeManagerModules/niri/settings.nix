@@ -5,7 +5,7 @@
   lib,
   ...
 }: let
-  wallpaper = "${./../stylix/night.jpg}";
+  wallpaper = "${./../stylix/nix.png}";
   colors = config.lib.stylix.colors.withHashtag;
 in {
   programs.niri = {

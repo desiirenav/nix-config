@@ -9,7 +9,6 @@
     mangohud
     osu-lazer-bin
     qbittorrent
-    pcsx2
   ];
 
   environment.sessionVariables = {

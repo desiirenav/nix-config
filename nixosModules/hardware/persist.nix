@@ -23,13 +23,10 @@
         "Games"
         ".ssh"
 	".librewolf"
-        ".cache/flatpak"
-        ".local/share/flatpak"
         ".local/share/Steam"
         ".config/discord"
         ".config/Vencord"
 	".config/nushell"
-	".config/PCSX2"
         ".var/app"
       ];
       files = [
