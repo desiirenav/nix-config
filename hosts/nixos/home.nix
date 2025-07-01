@@ -12,6 +12,7 @@
     ./../../homeManagerModules/packages/fuzzel.nix
     ./../../homeManagerModules/packages/kitty.nix
     ./../../homeManagerModules/packages/nixcord.nix
+    ./../../homeManagerModules/packages/textfox.nix
     ./../../homeManagerModules/packages/nushell.nix
     ./../../homeManagerModules/stylix/stylix.nix
   ];

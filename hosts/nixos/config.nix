@@ -93,8 +93,6 @@
     calibre
     librewolf
     vlc
-    neovim
-    vim
   ];
 
   # OpenSSH daemon.

@@ -10,6 +10,7 @@
     impermanence.url = "github:nix-community/impermanence";
     nixcord.url = "github:kaylorben/nixcord";
     nvf.url = "github:notashelf/nvf";
+    textfox.url = "github:adriankarlen/textfox";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
     sf-mono-liga-src = {
