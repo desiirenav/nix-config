@@ -15,7 +15,7 @@
         "Print".action.screenshot-screen = {write-to-disk = true;};
 	"Mod+Shift+Alt+S".action = screenshot-window;
         "Mod+X".action = spawn "fuzzel";
-        "Mod+Return".action = spawn "ghostty";
+        "Mod+Return".action = spawn "kitty";
         "Mod+1".action = focus-workspace 1;
         "Mod+2".action = focus-workspace 2;
         "Mod+3".action = focus-workspace 3;

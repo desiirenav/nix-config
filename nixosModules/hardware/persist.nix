@@ -27,7 +27,6 @@
         ".config/discord"
         ".config/Vencord"
 	".config/nushell"
-        ".var/app"
       ];
       files = [
         ".bash_history"
