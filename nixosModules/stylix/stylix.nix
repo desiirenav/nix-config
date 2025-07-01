@@ -12,7 +12,7 @@
     autoEnable = true;
     enable = true;
     image = ./nix.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     cursor = {
       package = pkgs.capitaine-cursors-themed;
       name = "Capitaine Cursors (Gruvbox)";
