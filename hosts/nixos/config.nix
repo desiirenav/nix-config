@@ -4,10 +4,8 @@
     ./../../nixosModules/hardware/persist.nix
     ./../../nixosModules/hardware/nvidia.nix
     ./../../nixosModules/packages/gaming.nix
-    ./../../nixosModules/packages/flatpak.nix
     ./../../nixosModules/packages/fonts.nix
     ./../../nixosModules/packages/nixvim.nix
-    ./../../nixosModules/packages/browser.nix
     ./../../nixosModules/stylix/stylix.nix
     ./../../overlays/liga.nix
   ];
@@ -72,6 +70,9 @@
   # Flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # GVFS
+  services.gvfs.enable = true;
+
   # Niri
   programs.niri = {
     enable = true;
@@ -89,6 +90,9 @@
     fastfetch
     nitch
     pfetch
+    calibre
+    librewolf
+    vlc
   ];
 
   # OpenSSH daemon.

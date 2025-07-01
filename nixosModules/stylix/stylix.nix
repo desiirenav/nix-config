@@ -11,19 +11,14 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./night.jpg;
+    image = ./nix.jpg;
     cursor = {
-      package = pkgs.phinger-cursors;
-      name = "phinger-cursors-dark";
+      package = pkgs.capitaine-cursors-themed;
+      name = "Capitaine Cursors (Gruvbox)";
       size = 22;
     };
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
-    fonts = {
-      serif = {
-        package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
-        name = "SFProDisplay Nerd Font";
-      };
-      sansSerif = {
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+     sansSerif = {
         package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
         name = "SFProDisplay Nerd Font";
       };

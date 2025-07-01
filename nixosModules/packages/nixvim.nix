@@ -11,7 +11,7 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    colorschemes.ayu.enable = true;
+    colorschemes.gruvbox.enable = true;
     plugins = {
       lualine.enable = true;
       web-devicons.enable = true;

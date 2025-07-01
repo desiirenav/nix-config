@@ -13,6 +13,7 @@
         "XF86MonBrightnessUp".action = spawn "sh" "-c" "brightnessctl set 10%+";
         "XF86MonBrightnessDown".action = spawn "sh" "-c" "brightnessctl set 10%-";
         "Print".action.screenshot-screen = {write-to-disk = true;};
+	"Mod+Shift+Alt+S".action = screenshot-window;
         "Mod+X".action = spawn "fuzzel";
         "Mod+Return".action = spawn "ghostty";
         "Mod+1".action = focus-workspace 1;

@@ -29,8 +29,8 @@
         ".config/discord"
         ".config/Vencord"
 	".config/nushell"
+	".config/PCSX2"
         ".var/app"
-	".zen"
       ];
       files = [
         ".bash_history"
