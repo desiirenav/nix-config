@@ -14,10 +14,6 @@
         telescope.enable = true;
         autocomplete.nvim-cmp.enable = true;
         lsp.enable = true;
-        theme = {
-          name = "gruvbox";
-	  style = "dark";
-        };
         languages = {
           enableFormat = true;
           enableTreesitter = true;

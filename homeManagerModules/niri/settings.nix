@@ -23,8 +23,8 @@ in {
           enable = true;
           width = 1.5;
           active.gradient = {
-            from = colors.base03;
-            to = colors.base03;
+            from = colors.base0F;
+            to = colors.base0A;
           };
         };
         shadow = {
