@@ -5,7 +5,7 @@
   lib,
   ...
 }: let
-  wallpaper = "${./../stylix/nix.png}";
+  wallpaper = "${./../stylix/splash.png}";
   colors = config.lib.stylix.colors.withHashtag;
 in {
   programs.niri = {
@@ -24,7 +24,7 @@ in {
           width = 1.5;
           active.gradient = {
             from = colors.base0F;
-            to = colors.base0A;
+            to = colors.base0F;
           };
         };
         shadow = {

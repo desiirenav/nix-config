@@ -14,6 +14,9 @@
         telescope.enable = true;
         autocomplete.nvim-cmp.enable = true;
         lsp.enable = true;
+        theme = {
+          name = "nord";
+        };
         languages = {
           enableFormat = true;
           enableTreesitter = true;

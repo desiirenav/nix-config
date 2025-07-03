@@ -11,11 +11,11 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./nix.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    image = ./splash.png;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     cursor = {
       package = pkgs.capitaine-cursors-themed;
-      name = "Capitaine Cursors (Gruvbox)";
+      name = "Capitaine Cursors (Nord)";
       size = 22;
     };
     fonts = {

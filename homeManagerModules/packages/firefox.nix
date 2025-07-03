@@ -5,44 +5,26 @@
   lib,
   ...
 }: {
+
+  imports = [ inputs.textfox.homeManagerModules.default ];
+
+  textfox = {
+    enable = true;
+    profile = "narayan";
+    config = {
+    };
+  };
+
   programs.firefox = {
     enable = true;
     profiles.narayan = {
-      extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+      extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
         bitwarden
         ublock-origin
         sponsorblock
       ];
 
-      search.engines = {
-        "Nix Packages" = {
-          urls = [
-            {
-              template = "https://search.nixos.org/packages";
-              params = [
-                {
-                  name = "type";
-                  value = "packages";
-                }
-                {
-                  name = "channel";
-                  value = "unstable";
-                }
-                {
-                  name = "query";
-                  value = "{searchTerms}";
-                }
-              ];
-            }
-          ];
-          icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-          definedAliases = ["@n"];
-        };
-      };
-
-      search.force = true;
-
-      settings = {
+     settings = {
         "browser.disableResetPrompt" = true;
         "browser.download.panel.shown" = true;
         "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
@@ -59,5 +41,4 @@
       };
     };
   };
-
 }

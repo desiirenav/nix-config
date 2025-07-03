@@ -9,6 +9,7 @@
     targets = {
       starship.enable = false;
       ghostty.enable = false;
+      firefox.profileNames = [ "narayan" ];
     };
   };
 }
