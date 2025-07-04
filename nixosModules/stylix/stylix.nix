@@ -11,11 +11,11 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./splash.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    image = ./wal.jpg;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
     cursor = {
-      package = pkgs.capitaine-cursors-themed;
-      name = "Capitaine Cursors (Nord)";
+      package = pkgs.rose-pine-cursor;
+      name = "BreezeX-RosePineDawn-Linux";
       size = 22;
     };
     fonts = {

@@ -49,7 +49,7 @@
     narayan = {
       isNormalUser = true;
       description = "Narayan";
-      extraGroups = [ "wheel" "networkmanager" ];
+      extraGroups = [ "wheel" "networkmanager" "docker" ];
       hashedPasswordFile = "/nix/persist/passwords/narayan";
       openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyI6UtQXtVNvUqv6bRsHAOhwynB9Eyjb4BJmdekshXJ narayan@nixos"];
       shell = pkgs.nushell;
@@ -77,6 +77,10 @@
   programs.niri = {
     enable = true;
     package = pkgs.niri-unstable;
+  };
+
+  virtualisation.docker = {
+    enable = true;
   };
 
   # Packages

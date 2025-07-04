@@ -15,8 +15,9 @@
         autocomplete.nvim-cmp.enable = true;
         lsp.enable = true;
         theme = {
-          name = "nord";
-        };
+          name = "rose-pine";
+          style = "dawn";
+        };  
         languages = {
           enableFormat = true;
           enableTreesitter = true;
