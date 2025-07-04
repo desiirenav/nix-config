@@ -27,6 +27,7 @@ if __name__ == "__main__":
     sideLeft = sideLeft()
     sideRight = sideRight()
 
+    # Hide initially
 
     launcher.hide()
     sideLeft.hide()
