@@ -1,0 +1,14 @@
+@import url("_bar.css");
+@import url("_launcher.css");
+@import url("color.css");
+@import url("_screencorners.css");
+@import url("_sideleft.css");
+@import url("_sideright.css");
+@import url("extra.css");
+@import url("_notifications.css");
+
+* {
+    all: unset;
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans",
+        sans-serif;
+}
