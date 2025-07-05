@@ -11,15 +11,15 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./wal.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
+    image = ./night.jpg;
     cursor = {
-      package = pkgs.rose-pine-cursor;
-      name = "BreezeX-RosePineDawn-Linux";
+      package = pkgs.phinger-cursors;
+      name = "phinger-cursors-dark";
       size = 22;
     };
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
     fonts = {
-     serif = {
+      serif = {
         package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
         name = "SFProDisplay Nerd Font";
       };
