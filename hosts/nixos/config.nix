@@ -5,7 +5,6 @@
     ./../../nixosModules/hardware/nvidia.nix
     ./../../nixosModules/packages/gaming.nix
     ./../../nixosModules/packages/fonts.nix
-    ./../../nixosModules/packages/nvf.nix
     ./../../nixosModules/stylix/stylix.nix
     ./../../overlays/liga.nix
   ];
@@ -96,6 +95,7 @@
     pfetch
     calibre
     librewolf
+    neovim
     vlc
   ];
 

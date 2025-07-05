@@ -19,7 +19,7 @@
       size = 22;
     };
     fonts = {
-      serif = {
+     serif = {
         package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
         name = "SFProDisplay Nerd Font";
       };
