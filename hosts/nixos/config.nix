@@ -9,7 +9,10 @@
     ./../../overlays/liga.nix
   ];
 
-  nixpkgs.overlays = [inputs.niri.overlays.niri];
+  nixpkgs.overlays = [
+    inputs.niri.overlays.niri
+    inputs.nvim-config.overlays.default
+  ];
   
   # Host name
   networking.hostName = "nixos";
@@ -82,6 +85,7 @@
     enable = true;
   };
 
+
   # Packages
   environment.systemPackages = with pkgs; [
     yazi
@@ -95,7 +99,7 @@
     pfetch
     calibre
     librewolf
-    neovim
+    nvim-pkg
     vlc
   ];
 
