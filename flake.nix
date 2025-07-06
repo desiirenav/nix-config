@@ -16,7 +16,6 @@ home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nvim-config.url = "github:desiirenav/nvim-config";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
-    textfox.url = "github:adriankarlen/textfox";
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
