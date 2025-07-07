@@ -29,7 +29,6 @@
         ".local/share/Steam"
         ".config/discord"
         ".config/Vencord"
-	".config/nushell"
       ];
       files = [
         ".bash_history"
