@@ -8,13 +8,13 @@
 }: {
   imports = [
     ./../../homeManagerModules/niri/default.nix
-    ./../../homeManagerModules/packages/nixcord.nix
-    ./../../homeManagerModules/packages/fuzzel.nix
-    ./../../homeManagerModules/packages/kitty.nix
-    ./../../homeManagerModules/packages/nixcord.nix
-    ./../../homeManagerModules/packages/firefox.nix
-    ./../../homeManagerModules/packages/nushell.nix
-    ./../../homeManagerModules/stylix/stylix.nix
+    ./../../homeManagerModules/nixcord.nix
+    ./../../homeManagerModules/fuzzel.nix
+    ./../../homeManagerModules/kitty.nix
+    ./../../homeManagerModules/nixcord.nix
+    ./../../homeManagerModules/firefox.nix
+    ./../../homeManagerModules/nushell.nix
+    ./../../homeManagerModules/stylix.nix
   ];
 
   home.username = "narayan";
