@@ -54,7 +54,6 @@
       extraGroups = [ "wheel" "networkmanager" "docker" ];
       hashedPasswordFile = "/nix/persist/passwords/narayan";
       openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyI6UtQXtVNvUqv6bRsHAOhwynB9Eyjb4BJmdekshXJ narayan@nixos"];
-      shell = pkgs.nushell;
     };
   };
 
@@ -95,8 +94,6 @@
     unzip
     unrar
     fastfetch
-    nitch
-    pfetch
     calibre
     librewolf
     nvim-pkg

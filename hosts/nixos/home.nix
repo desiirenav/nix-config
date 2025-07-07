@@ -13,7 +13,6 @@
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/nixcord.nix
     ./../../homeManagerModules/firefox.nix
-    ./../../homeManagerModules/nushell.nix
     ./../../homeManagerModules/stylix.nix
   ];
 
