@@ -8,7 +8,6 @@
       "/var/lib/nixos"
       "/var/lib/systemd/coredump"
       "/etc/NetworkManager/system-connections"
-      "/var/lib/flatpak"
     ];
     files = [
       "/etc/machine-id"
