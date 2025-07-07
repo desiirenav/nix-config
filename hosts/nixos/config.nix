@@ -44,12 +44,16 @@
     jack.enable = true;
   };
 
+  # Zsh
+  programs.zsh.enable = true;
+
   # Users
   users.mutableUsers = false;
   users.users = {
     root.hashedPasswordFile = "/nix/persist/passwords/root";
     narayan = {
       isNormalUser = true;
+      shell = pkgs.zsh;
       description = "Narayan";
       extraGroups = [ "wheel" "networkmanager" "docker" ];
       hashedPasswordFile = "/nix/persist/passwords/narayan";
