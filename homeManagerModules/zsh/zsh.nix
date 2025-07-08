@@ -20,10 +20,10 @@
         tags = [ "as:theme" "depth:1" ];
       }];
     };
+  };
 
-    home.file.".p10k.zsh" = {
-      source = ./.p10k.zsh;
-      executable = true;
-    };
+  home.file.".p10k.zsh" = {
+    source = ./.p10k.zsh;
+    executable = true;
   };
 }
