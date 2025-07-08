@@ -9,12 +9,16 @@
     initContent = ''
       if [ "$(tty)" = "/dev/tty1" ];then   
          exec niri-session 
-      fi 
+      fi
+
+      [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     '';
-    oh-my-zsh = {
+    zplug = {
       enable = true;
-      plugins = [
-      ];
+      plugins = [{
+        name = "romkatv/powerlevel10k";
+        tags = [ "as:theme" "depth:1" ];
+      }];
     };
   };
 }
