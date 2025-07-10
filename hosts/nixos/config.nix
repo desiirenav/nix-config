@@ -47,6 +47,13 @@
   # Zsh
   programs.zsh.enable = true;
 
+
+  # Distrobox
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+
   # Users
   users.mutableUsers = false;
   users.users = {
@@ -84,10 +91,6 @@
     package = pkgs.niri-unstable;
   };
 
-  virtualisation.docker = {
-    enable = true;
-  };
-
 
   # Packages
   environment.systemPackages = with pkgs; [
@@ -98,8 +101,8 @@
     unzip
     unrar
     fastfetch
-    calibre
     librewolf
+    distrobox
     nvim-pkg
     vlc
   ];

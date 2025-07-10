@@ -18,6 +18,7 @@
         "Music"
         "Pictures"
         "Documents"
+        "Projects"
         "Videos"
         "Games"
         ".ssh"
