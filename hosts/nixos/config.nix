@@ -3,6 +3,7 @@
     ./../../nixosModules/hardware-configuration.nix
     ./../../nixosModules/persist.nix
     ./../../nixosModules/nvidia.nix
+    ./../../nixosModules/packages/flatpak.nix
     ./../../nixosModules/gaming.nix
     ./../../nixosModules/fonts.nix
     ./../../nixosModules/stylix.nix
