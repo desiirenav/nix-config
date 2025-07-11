@@ -14,7 +14,6 @@
     ./../../homeManagerModules/nixcord.nix
     ./../../homeManagerModules/firefox.nix
     ./../../homeManagerModules/stylix.nix
-    ./../../homeManagerModules/zsh.nix
   ];
 
   home.username = "narayan";

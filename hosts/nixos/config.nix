@@ -3,7 +3,6 @@
     ./../../nixosModules/hardware-configuration.nix
     ./../../nixosModules/persist.nix
     ./../../nixosModules/nvidia.nix
-    ./../../nixosModules/flatpak.nix
     ./../../nixosModules/gaming.nix
     ./../../nixosModules/fonts.nix
     ./../../nixosModules/stylix.nix
@@ -45,10 +44,6 @@
     jack.enable = true;
   };
 
-  # Zsh
-  programs.zsh.enable = true;
-
-
   # Distrobox
   virtualisation.podman = {
     enable = true;
@@ -61,7 +56,6 @@
     root.hashedPasswordFile = "/nix/persist/passwords/root";
     narayan = {
       isNormalUser = true;
-      shell = pkgs.zsh;
       description = "Narayan";
       extraGroups = [ "wheel" "networkmanager" "docker" ];
       hashedPasswordFile = "/nix/persist/passwords/narayan";

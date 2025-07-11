@@ -6,7 +6,6 @@
       "/var/lib/nixos"
       "/var/lib/systemd/coredump"
       "/etc/NetworkManager/system-connections"
-      "/var/lib/flatpak"
     ];
     files = [
       "/etc/machine-id"
@@ -23,12 +22,10 @@
         ".ssh"
         ".cache/mozilla"
         ".cache/kitty"
-        ".cache/flatpak"
-        ".local/share/flatpak"
-        ".var/app"
         ".mozilla"
 	      ".librewolf"
         ".local/share/Steam"
+        ".local/share/anime-game-launcher"
         ".config/discord"
         ".config/Vencord"
       ];
