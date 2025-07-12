@@ -11,7 +11,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../wallpapers/night.jpg;
+    image = ./../../assests/wallpapers/night.jpg;
     cursor = {
       package = pkgs.phinger-cursors;
       name = "phinger-cursors-dark";

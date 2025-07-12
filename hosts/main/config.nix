@@ -1,11 +1,11 @@
 { inputs, pkgs, lib, config, ... }: {
   imports = [
-    ./../../nixosModules/hardware-configuration.nix
-    ./../../nixosModules/persist.nix
-    ./../../nixosModules/nvidia.nix
-    ./../../nixosModules/gaming.nix
-    ./../../nixosModules/fonts.nix
-    ./../../nixosModules/stylix.nix
+    ./../../modules/nixos/hardware-configuration.nix
+    ./../../modules/nixos/persist.nix
+    ./../../modules/nixos/nvidia.nix
+    ./../../modules/nixos/gaming.nix
+    ./../../modules/nixos/fonts.nix
+    ./../../modules/nixos/stylix.nix
     ./../../overlays/liga.nix
   ];
 

@@ -31,7 +31,7 @@
         modules = [
           inputs.home-manager.nixosModules.home-manager
           inputs.impermanence.nixosModules.impermanence
-          ./hosts/nixos/config.nix
+          ./hosts/main/config.nix
         ];
       };
     };

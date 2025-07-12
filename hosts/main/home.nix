@@ -7,13 +7,13 @@
   ...
 }: {
   imports = [
-    ./../../homeManagerModules/niri/default.nix
-    ./../../homeManagerModules/nixcord.nix
-    ./../../homeManagerModules/fuzzel.nix
-    ./../../homeManagerModules/kitty.nix
-    ./../../homeManagerModules/nixcord.nix
-    ./../../homeManagerModules/firefox.nix
-    ./../../homeManagerModules/stylix.nix
+    ./../../modules/home-manager/niri/default.nix
+    ./../../modules/home-manager/nixcord.nix
+    ./../../modules/home-manager/fuzzel.nix
+    ./../../modules/home-manager/kitty.nix
+    ./../../modules/home-manager/nixcord.nix
+    ./../../modules/home-manager/firefox.nix
+    ./../../modules/home-manager/stylix.nix
   ];
 
   home.username = "narayan";
