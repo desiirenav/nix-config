@@ -22,6 +22,7 @@
   home.stateVersion = "25.11";
 
   home.packages = [
+    inputs.quickshell.packages.<system>.default
   ];
 
   programs.git = {

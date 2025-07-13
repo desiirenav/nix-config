@@ -24,7 +24,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-
   # NTFS
   boot.supportedFilesystems = ["ntfs"];
 
@@ -33,6 +32,10 @@
 
   # Bluetooth
   hardware.bluetooth.enable = true;
+
+  services = {
+    displayManager.gdm.enable = true;
+  };
 
   # Sound via PipeWire
   security.rtkit.enable = true;
@@ -49,6 +52,7 @@
     enable = true;
     dockerCompat = true;
   };
+
 
   # Users
   users.mutableUsers = false;

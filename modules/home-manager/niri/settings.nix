@@ -36,7 +36,7 @@ in {
           command = ["xwayland-satellite"];
         }
         {
-          command = ["swaybg" "-m" "fill" "-i" wallpaper];
+          command = ["${pkgs.swaybg}/bin/swaybg" "-o" "DP-1" "-i" wallpaper "-m" "fill"];
         }
         {
           command = ["dunst"];
