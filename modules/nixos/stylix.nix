@@ -11,13 +11,13 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../assets/wallpapers/bird.png;
+    image = ./../../assets/wallpapers/nord.png;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     cursor = {
-      name = "phinger-cursors-dark";
-      package = pkgs.rose-pine-cursors;
+      package = pkgs.capitaine-cursors-themed;
+      name = "Capitaine Cursors (Nord)";
       size = 22;
     };
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
     fonts = {
       serif = {
         package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;

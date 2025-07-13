@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, config, ... }: {
+{ inputs, pkgs, lib, config, system, ... }: {
   imports = [
     ./../../modules/nixos/hardware-configuration.nix
     ./../../modules/nixos/persist.nix

@@ -5,7 +5,7 @@
   lib,
   ...
 }: let
-  wallpaper = "${./../../../assets/wallpapers/night.jpg}";
+  wallpaper = "${./../../../assets/wallpapers/bird.png}";
   colors = config.lib.stylix.colors.withHashtag;
 in {
   programs.niri = {
@@ -36,7 +36,7 @@ in {
           command = ["xwayland-satellite"];
         }
         {
-          command = ["${pkgs.swaybg}/bin/swaybg" "-o" "DP-1" "-i" wallpaper "-m" "fill"];
+          command = ["swaybg" "-m" "fill" "-i" wallpaper];
         }
         {
           command = ["dunst"];
