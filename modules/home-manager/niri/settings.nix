@@ -5,7 +5,7 @@
   lib,
   ...
 }: let
-  wallpaper = "${./../../../assets/wallpapers/bird.png}";
+  wallpaper = "${./../../../assets/wallpapers/nord.jpg}";
   colors = config.lib.stylix.colors.withHashtag;
 in {
   programs.niri = {
@@ -32,15 +32,8 @@ in {
         };
       };
       spawn-at-startup = [
-        {
-          command = ["xwayland-satellite"];
-        }
-        {
-          command = ["swaybg" "-m" "fill" "-i" wallpaper];
-        }
-        {
-          command = ["dunst"];
-        }
+        { command = ["xwayland-satellite"];}
+        { command = ["swaybg" "-m" "fill" "-i" wallpaper]; }
       ];
     };
   };

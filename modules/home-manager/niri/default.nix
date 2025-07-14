@@ -17,7 +17,6 @@
     xwayland-satellite
     brightnessctl
     swaybg
-    dunst
     nautilus
     adwaita-icon-theme
   ];

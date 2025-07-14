@@ -11,7 +11,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../assets/wallpapers/nord.png;
+    image = ./../../assets/wallpapers/nord.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     cursor = {
       package = pkgs.capitaine-cursors-themed;
