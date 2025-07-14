@@ -5,11 +5,12 @@
   lib,
   ...
 }: let 
-  wallpaper = "${./../../../assets/wallpapers/nord.jpg}";
+  wallpaper = "${./../../assets/wallpapers/nord.jpg}";
   colors = config.lib.stylix.colors.withHashtag;
 in {
   imports = [
     inputs.niri.homeModules.niri
+    inputs.niri.homeModules.stylix
   ];
 
   home.packages = with pkgs; [
@@ -20,7 +21,6 @@ in {
     nautilus
     adwaita-icon-theme
   ];
-};
 
   programs.niri = {
     settings = {
@@ -28,11 +28,11 @@ in {
         DISPLAY = ":0";
         NIXOS_OZONE_WL = "1";
       };
+      prefer-no-csd = true;
       layout = {
         gaps = 16;
         focus-ring = {
-          enable = true;
-          width = 3;
+          enable = false;
           #active.color = ;
           #inactive.color =;
         };
@@ -42,12 +42,11 @@ in {
       };
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}
-        {command = ["swaybg" "-m" "fill" "-i" walllpaper ];}
+        {command = ["swaybg" "-m" "fill" "-i" wallpaper ];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
-      windows-rule = [
+      window-rules = [
         {
-          default-column-width = true;
           geometry-corner-radius = {
             bottom-left = 9.0;
             bottom-right = 9.0;
@@ -80,11 +79,6 @@ in {
         "Mod+Right".action = focus-column-right;
         "Mod+Down".action = focus-workspace-down;
         "Mod+Up".action = focus-workspace-up;
-
-        "Mod+Ctrl+Left".action = move-column-left;
-        "Mod+Ctrl+Down".action = move-window-down;
-        "Mod+Ctrl+Up".action = move-windows-up;
-        "Mod+Ctrl+Right".action = move-column-right;
 
         "Mod+Home".action = focus-column-first;
         "Mod+End".action = focus-column-last;
@@ -136,15 +130,6 @@ in {
         "Mod+7".action = focus-workspace 7;
         "Mod+8".action = focus-workspace 8;
         "Mod+9".action = focus-workspace 9;
-        "Mod+Ctrl+1".action = move-column-to-workspace 1;
-        "Mod+Ctrl+2".action = move-column-to-workspace 2;
-        "Mod+Ctrl+3".action = move-column-to-workspace 3;
-        "Mod+Ctrl+4".action = move-column-to-workspace 4;
-        "Mod+Ctrl+5".action = move-column-to-workspace 5;
-        "Mod+Ctrl+6".action = move-column-to-workspace 6; 
-        "Mod+Ctrl+7".action = move-column-to-workspace 7;
-        "Mod+Ctrl+8".action = move-column-to-workspace 8;
-        "Mod+Ctrl+9".action = move-column-to-workspace 9;
 
         "Mod+BracketLeft".action  = consume-or-expel-window-left;
         "Mod+BracketRight".action = consume-or-expel-window-right;
@@ -176,11 +161,7 @@ in {
 
         "Mod+W".action = toggle-column-tabbed-display;
 
-        
         "Print".action = screenshot;
-        "Ctrl+Print".action =screenshot-screen;
-        "Alt+Print".action = screenshot-window;
-        "Alt+Print".action = screenshot-window;
 
         "Mod+Escape".action = toggle-keyboard-shortcuts-inhibit;
 
@@ -193,3 +174,4 @@ in {
       };
     };
   };
+}
