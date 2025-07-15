@@ -32,9 +32,10 @@ in {
       layout = {
         gaps = 16;
         focus-ring = {
+          enable = true;
+        };
+        border = {
           enable = false;
-          #active.color = ;
-          #inactive.color =;
         };
         shadow = {
           enable = true;

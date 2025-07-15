@@ -7,6 +7,7 @@
   ...
 }: {
   imports = [
+    ./../../modules/home-manager/quickshell/quickshell.nix
     ./../../modules/home-manager/niri.nix
     ./../../modules/home-manager/nixcord.nix
     ./../../modules/home-manager/fuzzel.nix

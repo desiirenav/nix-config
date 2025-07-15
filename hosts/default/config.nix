@@ -37,7 +37,7 @@
     displayManager.gdm.enable = true;
   };
 
-  # Sound via PipeWire
+  # Sound via pipewire
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -98,6 +98,7 @@
     zathura
     ani-cli
     unzip
+    calibre
     unrar
     fastfetch
     librewolf
