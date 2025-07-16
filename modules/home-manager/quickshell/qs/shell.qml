@@ -1,10 +1,6 @@
 import Quickshell
 
-Shellroot {
+Scope {
      id: root
-
-     Loader {
-         active: true
-         sourceComponent: Bar{}
-     }
+     Bar {}
 }
