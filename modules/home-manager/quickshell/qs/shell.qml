@@ -1,6 +1,10 @@
-// shell.qml
 import Quickshell
 
-Scope {
-  Bar {}
+Shellroot {
+     id: root
+
+     Loader {
+         active: true
+         sourceComponent: Bar{}
+     }
 }

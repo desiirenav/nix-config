@@ -4,5 +4,7 @@ import QtQuick
 
 Scope {
   id: root
-
+  
+  Time {
+  }
 }
