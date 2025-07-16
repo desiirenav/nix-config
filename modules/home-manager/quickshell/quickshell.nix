@@ -8,6 +8,10 @@
 }: {
 
   home.packages = with pkgs; [
-    inputs.quickshell.packages."${system}".default
+    quickshell
   ];
+
+  home.file = {
+    ".config/quickshell".source = builtins.toString ./qs;
+  };
 }

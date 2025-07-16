@@ -32,7 +32,7 @@ in {
       layout = {
         gaps = 16;
         focus-ring = {
-          enable = true;
+          enable = false;
         };
         border = {
           enable = false;

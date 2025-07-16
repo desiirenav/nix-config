@@ -98,8 +98,8 @@
     zathura
     ani-cli
     unzip
-    calibre
     unrar
+    nitch
     fastfetch
     librewolf
     distrobox

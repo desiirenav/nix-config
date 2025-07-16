@@ -21,7 +21,6 @@
         "Games"
         ".ssh"
         ".cache/mozilla"
-        ".cache/kitty"
         ".mozilla"
 	      ".librewolf"
         ".local/share/Steam"
