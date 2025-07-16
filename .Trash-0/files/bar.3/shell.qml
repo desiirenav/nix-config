@@ -7,6 +7,6 @@ Scope {
 
     Loader {
         active: true
-        sourceComponent: bar{}
+        sourceComponent: Bar{}
     }
 }
