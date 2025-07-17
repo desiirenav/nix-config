@@ -12,6 +12,7 @@ Scope {
     PanelWindow {
       property var modelData
       screen: modelData
+      implicitHeight: 30
 
       anchors {
         top: true
@@ -19,12 +20,10 @@ Scope {
         right: true
       }
 
-      implicitHeight: 30
-
-      Text {
-        anchors.centerIn: parent
-
-        text: "hello world"
+      Rectangle {
+        id: background
+        anchors.fill: parent
+        color: "#2e3440"
       }
     }
   }
