@@ -1,13 +1,10 @@
 import Quickshell
 import QtQuick
-import "./modules/bar"
+import "./bar"
 
-
-ShellRoot {
+Scope {
     id: root
-
-    Loader {
-        active: true
-        sourceComponent: Bar {}
+    
+    Bar {
     }
 }
