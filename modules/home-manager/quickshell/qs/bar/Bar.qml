@@ -2,19 +2,39 @@ import Quickshell
 import Quickshell.Io
 import QtQuick
 
-PanelWindow {
-  anchors {
-    top: true
-    left: true
-    right: true
-  }
+Scope {
+  id: root
+  property string time
 
-  implicitHeight: 30
+  Variants {
+    model: Quickshell.screens
 
-  Text {
-    // center the bar in its parent component (the window)
-    anchors.centerIn: parent
+    PanelWindow {
+      property var modelData
+      screen: modelData
 
-    text: "hello world"
+      anchors {
+        top: true
+        left: true
+        right: true
+      }
+
+      implicitHeight: 30
+      margins {
+
+        Rectangle {
+          id: bar
+          anchors.fill: parent
+          color: #2e3440
+          radius: 15
+          border.color: #4c566a
+          border.width: 1
+
+          row {}
+
+        }
+      }
+
+    }
   }
 }
