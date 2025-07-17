@@ -1,5 +1,5 @@
 import Quickshell
-import qtQuick
+import QtQuick
 
 PanelWindow {
     id:panel
