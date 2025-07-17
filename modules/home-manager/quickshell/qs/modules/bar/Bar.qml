@@ -2,7 +2,7 @@ import Quickshell
 import QtQuick
 
 PanelWindow {
-    id:panel
+    id: panel
 
     anchors {
          top: true
@@ -11,47 +11,47 @@ PanelWindow {
     }
 
     implicitHeight: 30
-    margins {
-        top: 8
-        left: 0
-        right: 0
+    
+    // FIX: Replace invalid margins block with proper contentItem
+    contentItem: Rectangle {
+        id: bar
+        anchors.fill: parent
+        anchors.topMargin: 8  // Top margin moved here
+        color: "#2e3440"      // FIX: Added quotes around color values
+        radius: 15
+        border.color: "#4c566a"  // FIX: Added quotes
+        border.width: 1
 
-        Rectangle {
-             id: bar
-             anchors.fill: parent
-             color: #2e3440
-             radius: 15
-             border.color: #4c566a
-             border.width: 1
+        // FIX: Changed lowercase row to Row
+        Row {
+            id: rowLayout
+            // Add content here later
+        }
 
-             row {}
+        Text {
+            id: timeDisplay
+            anchors {
+                right: parent.right
+                verticalCenter: parent.verticalCenter
+                rightMargin: 16
+            }
 
-             Text {
-                id: timeDisplay
-                anchors {
-                    right: parent.right
-                    verticalCenter: parent.verticalCenter
-                    rightMargin: 16
+            property string currentTime: ""
+
+            text: currentTime
+            color: "#d8dee9"
+            font.pixelSize: 14
+
+            Timer {
+                interval: 1000
+                running: true
+                repeat: true
+                onTriggered: {
+                    var now = new Date()
+                    // FIX: Added space between date and time
+                    timeDisplay.currentTime = Qt.formatDate(now, "MMM dd") + " " + Qt.formatTime(now, "hh:mm")
                 }
-
-                property string currentTime: ""
-
-                text: currentTime
-                color: "#d8dee9"
-                font.pixelSize: 14
-
-                Timer {
-                    interval: 1000
-                    running: true
-                    repeat: true
-                    onTriggered: {
-                        var now = new Date()
-                        timeDisplay.currentTime = Qt.formatDate(now, "MMM dd") + "" + Qt.formatTime(now, "hh:mm")
-                    }
-                }
-
-             }
+            }
         }
     }
-
 }
