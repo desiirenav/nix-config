@@ -20,21 +20,12 @@ Scope {
       }
 
       implicitHeight: 30
-      margins {
 
-        Rectangle {
-          id: bar
-          anchors.fill: parent
-          color: #2e3440
-          radius: 15
-          border.color: #4c566a
-          border.width: 1
+      Text {
+        anchors.centerIn: parent
 
-          row {}
-
-        }
+        text: "hello world"
       }
-
     }
   }
 }
