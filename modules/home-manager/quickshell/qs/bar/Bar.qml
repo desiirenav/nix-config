@@ -14,6 +14,10 @@ Scope {
       screen: modelData
       implicitHeight: 30
 
+      property int volume: 0
+      property bool volumeMuted: false
+      property var defaultAudioSink
+
       anchors {
         top: true
         left: true
