@@ -30,7 +30,7 @@ in {
       };
       prefer-no-csd = true;
       layout = {
-        gaps = 9;
+        gaps = 12;
         focus-ring = {
           enable = false;
         };

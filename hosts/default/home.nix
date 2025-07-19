@@ -14,6 +14,7 @@
     ./../../modules/home-manager/nixcord.nix
     ./../../modules/home-manager/firefox.nix
     ./../../modules/home-manager/stylix.nix
+    ./../../modules/home-manager/tmux.nix
   ];
 
   home.username = "narayan";
