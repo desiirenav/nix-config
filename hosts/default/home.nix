@@ -11,10 +11,8 @@
     ./../../modules/home-manager/nixcord.nix
     ./../../modules/home-manager/fuzzel.nix
     ./../../modules/home-manager/kitty.nix
-    ./../../modules/home-manager/nixcord.nix
     ./../../modules/home-manager/firefox.nix
     ./../../modules/home-manager/stylix.nix
-    ./../../modules/home-manager/tmux.nix
   ];
 
   home.username = "narayan";
@@ -23,6 +21,7 @@
   home.stateVersion = "25.11";
 
   home.packages = [
+    discord
   ];
 
   programs.git = {
