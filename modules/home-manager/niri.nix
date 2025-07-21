@@ -15,9 +15,9 @@ in {
   home.packages = with pkgs; [
     xwayland-satellite
     brightnessctl
-    swaybg
     dunst
     nautilus
+    swww
     adwaita-icon-theme
   ];
 
@@ -44,16 +44,18 @@ in {
         {command = ["xwayland-satellite"];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
+
       layer-rules = [
         {
           matches = [
             {
-              namespace = "^wallpaper$";
+              namespace = "^swww-daemon$";
             }
           ];
           place-within-backdrop = true;
         } 
       ];
+
       window-rules = [
         {
           geometry-corner-radius = {
