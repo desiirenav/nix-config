@@ -17,7 +17,7 @@ in {
     brightnessctl
     dunst
     nautilus
-    swww
+    swaybg
     adwaita-icon-theme
   ];
 
@@ -49,12 +49,12 @@ in {
         {
           matches = [
             {
-              namespace = "^swww-daemon$";
+              namespace = "^wallpaper$";
             }
           ];
           place-within-backdrop = true;
         } 
-      ];
+      ]; 
 
       window-rules = [
         {
