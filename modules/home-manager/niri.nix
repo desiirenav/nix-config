@@ -30,15 +30,10 @@ in {
       prefer-no-csd = true;
       layout = {
         gaps = 12;
-        focus-ring = {
-          enable = false;
-        };
-        border = {
-          enable = false;
-        };
-        shadow = {
-          enable = true;
-        };
+        background-color = "transparent";
+        focus-ring.enable = false;
+        border.enable = false;
+        shadow.enable = true;
       };
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}

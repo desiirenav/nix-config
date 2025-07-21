@@ -47,13 +47,6 @@
     jack.enable = true;
   };
 
-  # Distrobox
-  virtualisation.podman = {
-    enable = true;
-    dockerCompat = true;
-  };
-
-
   # Users
   users.mutableUsers = false;
   users.users = {
