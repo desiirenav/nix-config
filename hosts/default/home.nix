@@ -8,7 +8,6 @@
 }: {
   imports = [
     ./../../modules/home-manager/niri.nix
-    ./../../modules/home-manager/swaybg.nix
     ./../../modules/home-manager/fuzzel.nix
     ./../../modules/home-manager/kitty.nix
     ./../../modules/home-manager/firefox.nix
