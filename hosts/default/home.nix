@@ -8,7 +8,7 @@
 }: {
   imports = [
     ./../../modules/home-manager/niri.nix
-    ./../../modules/home-manager/nixcord.nix
+    ./../../modules/home-manager/hyprpaper.nix
     ./../../modules/home-manager/fuzzel.nix
     ./../../modules/home-manager/kitty.nix
     ./../../modules/home-manager/firefox.nix
@@ -20,7 +20,7 @@
 
   home.stateVersion = "25.11";
 
-  home.packages = [
+  home.packages = with pkgs;[
     discord
   ];
 

@@ -5,7 +5,6 @@
   lib,
   ...
 }: let 
-  wallpaper = "${./../../assets/wallpapers/nord.jpg}";
   colors = config.lib.stylix.colors.withHashtag;
 in {
   imports = [
@@ -43,9 +42,18 @@ in {
       };
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}
-        {command = ["swaybg" "-m" "fill" "-i" wallpaper ];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
+      layer-rules = [
+        {
+          matches = [
+            {
+              namespace = "^wallpaper$";
+            }
+          ];
+          place-within-backdrop = true;
+        } 
+      ];
       window-rules = [
         {
           geometry-corner-radius = {
