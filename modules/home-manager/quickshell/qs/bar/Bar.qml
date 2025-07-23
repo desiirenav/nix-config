@@ -23,7 +23,7 @@ Scope {
       Rectangle {
         id: background
         anchors.fill: parent
-        color: "#E6B450"
+        color: "#0B0E14"
       }
     }
   }
