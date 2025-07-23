@@ -30,11 +30,6 @@
       base0E = "D2A6FF";
       base0F = "E6B673";
     };
-    cursor = {
-      package = pkgs.capitaine-cursors-themed;
-      name = "Capitaine Cursors (Gruvbox)";
-      size = 22;
-    };
     fonts = {
       serif = {
         package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
