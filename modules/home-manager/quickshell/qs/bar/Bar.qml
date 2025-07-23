@@ -19,6 +19,7 @@ Scope {
         right: true
       }
 
+
       implicitHeight: 30
 
       ClockWidget {
