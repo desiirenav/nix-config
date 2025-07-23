@@ -29,15 +29,18 @@ in {
       };
       prefer-no-csd = true;
       layout = {
-        gaps = 12;
+        gaps = 16;
         background-color = "transparent";
         focus-ring.enable = false;
-        border.enable = false;
+        border = {
+          enable = true;
+          width = 3;
+        };
         shadow.enable = true;
       };
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}
-        {command = ["swaybg" "-m" "fill" "-i" "${./../../assets/wallpapers/nord.jpg}" ];}
+        {command = ["swaybg" "-m" "fill" "-i" "${./../../assets/wallpapers/ayu.png}" ];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
 
@@ -55,10 +58,10 @@ in {
       window-rules = [
         {
           geometry-corner-radius = {
-            bottom-left = 9.0;
-            bottom-right = 9.0;
-            top-left = 9.0;
-            top-right = 9.0;
+            bottom-left = 4.0;
+            bottom-right = 4.0;
+            top-left = 4.0;
+            top-right = 4.0;
           };
           clip-to-geometry = true;
         }
