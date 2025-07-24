@@ -39,7 +39,7 @@ in {
       };
       spawn-at-startup = [
         {command = ["xwayland-satellite"];}
-        {command = ["swaybg" "-m" "fill" "-i" "${./../../assets/wallpapers/lotus.jpg}" ];}
+        {command = ["swaybg" "-m" "fill" "-i" "${./../../assets/wallpapers/flowers.jpg}" ];}
       ];
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
 
@@ -57,10 +57,10 @@ in {
       window-rules = [
         {
           geometry-corner-radius = {
-            bottom-left = 4.0;
-            bottom-right = 4.0;
-            top-left = 4.0;
-            top-right = 4.0;
+            bottom-left = 9.0;
+            bottom-right = 9.0;
+            top-left = 9.0;              
+            top-right = 9.0;
           };
           clip-to-geometry = true;
         }
