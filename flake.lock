@@ -657,11 +657,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1753313470,
-        "narHash": "sha256-SfhOHVKCRr/D805/s9u+EFsseszUF1scbHn5V2e3n/E=",
+        "lastModified": 1753317947,
+        "narHash": "sha256-MJYb6JnpgoTDvPbyGglpGjGgRtFNUCN/r2FpjFY5ovQ=",
         "owner": "desiirenav",
         "repo": "nvim-config",
-        "rev": "1388ecdb9f25c2c7795231b252a9b941588da81e",
+        "rev": "43b53d208b7baa8c848cc15daadc63940a1a42aa",
         "type": "github"
       },
       "original": {

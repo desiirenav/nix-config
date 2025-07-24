@@ -93,9 +93,9 @@
     unzip
     unrar
     nitch
+    flavours
     fastfetch
     librewolf
-    distrobox
     nvim-pkg
     vlc
   ];

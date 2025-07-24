@@ -7,8 +7,7 @@
     autoEnable = true;
     enable = true;
     targets = {
-      starship.enable = false;
-      ghostty.enable = false;
+      neovim.enable = true;
       firefox.profileNames = [ "narayan" ];
     };
   };
