@@ -11,7 +11,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./../../assets/wallpapers/ayu.png;
+    image = ./../../assets/wallpapers/waves.png;
     polarity = "dark";
     base16Scheme = {
       base00 = "0B0E14";
