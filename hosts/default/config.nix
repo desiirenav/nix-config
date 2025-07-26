@@ -1,6 +1,7 @@
 { inputs, pkgs, lib, config, system, ... }: {
   imports = [
     ./../../modules/nixos/hardware-configuration.nix
+    ./../../modules/nixos/browser.nix
     ./../../modules/nixos/persist.nix
     ./../../modules/nixos/nvidia.nix
     ./../../modules/nixos/gaming.nix

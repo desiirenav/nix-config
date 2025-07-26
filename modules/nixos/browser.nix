@@ -2,7 +2,7 @@
   inputs, pkgs, 
   ...
 }: {
-  home.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     librewolf
     inputs.zen-browser.packages."${system}".twilight
   ];
