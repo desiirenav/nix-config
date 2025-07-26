@@ -7,7 +7,6 @@
     autoEnable = true;
     enable = true;
     targets = {
-      neovim.enable = true;
     };
   };
 }
