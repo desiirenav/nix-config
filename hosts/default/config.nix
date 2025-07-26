@@ -95,7 +95,6 @@
     nitch
     flavours
     fastfetch
-    librewolf
     nvim-pkg
     vlc
   ];

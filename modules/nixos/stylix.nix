@@ -12,6 +12,7 @@
     autoEnable = true;
     enable = true;
     image = ./../../assets/wallpapers/ayu.png;
+    polarity = "dark";
     base16Scheme = {
       base00 = "0B0E14";
       base01 = "131721";
