@@ -11,6 +11,7 @@
     };
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
+    nixcord.url = "github:kaylorben/nixcord";
     niri.url = "github:sodiboo/niri-flake";
     niri-unstable.url = "github:YaLTeR/niri";
     impermanence.url = "github:nix-community/impermanence";
