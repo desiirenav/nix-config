@@ -1,10 +1,14 @@
-import Quickshell
-import QtQuick
-import "./bar"
+//@ pragma UseQApplication
+//@ pragma Env QS_NO_RELOAD_POPUP=1
 
-Scope {
+import QtQuick
+import Quickshell
+import "./modules/Bar"
+
+ShellRoot {
     id: root
-    
-    Bar {
+    Loader {
+        active: true
+        sourceComponent: Bar {}
     }
 }

@@ -13,6 +13,7 @@
     enable = true;
     image = ./../../assets/wallpapers/nord.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    polarity = "dark";
     cursor = {
       package = pkgs.capitaine-cursors-themed;
       name = "Capitaine Cursors (Nord)";

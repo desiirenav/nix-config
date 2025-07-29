@@ -5,7 +5,6 @@
   ...
 }: {
 
-  imports = [ inputs.aagl.nixosModules.default ];
 
   environment.systemPackages = with pkgs; [
     mangohud
@@ -25,8 +24,6 @@
     extraCompatPackages = with pkgs; [proton-ge-bin];
   };
 
-  nix.settings = inputs.aagl.nixConfig;
-  programs.anime-game-launcher.enable = true;
 
   programs.gamemode.enable = true;
       
