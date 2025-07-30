@@ -24,6 +24,7 @@
         ".mozilla"
 	      ".librewolf"
         ".local/share/Steam"
+#       ".local/share/anime-game-launcher"
         ".config/discord"
         ".config/Vencord"
       ];
