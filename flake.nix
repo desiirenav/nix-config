@@ -18,6 +18,10 @@
     nvim-config.url = "github:desiirenav/nvim-config";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     stylix.url = "github:danth/stylix";
+    anyrun = {
+      url = "github:anyrun-org/anyrun";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
