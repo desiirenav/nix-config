@@ -1,11 +1,14 @@
+//@ pragma UseQApplication
+//@ pragma Env QS_NO_RELOAD_POPUP=1
+
+import QtQuick
 import Quickshell
-import qtQuick
+import "./modules/"
 
-shellDir {
-  id: root
-  Loader {
-    active: true
-    sourceComponent: Bar {}
-  }
+ShellRoot {
+    id: root
+    Loader {
+        active: true
+        sourceComponent: Bar {}
+    }
 }
-
