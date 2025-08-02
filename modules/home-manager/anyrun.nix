@@ -9,8 +9,6 @@
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
         applications
         shell
-        symbols
-        translate
       ];
 
       width.fraction = 0.25;
@@ -25,7 +23,7 @@
         Config(
           desktop_actions: false,
           max_entries: 5,
-          terminal: Some("ghostty"),
+          terminal: Some("kitty"),
         )
       '';
 

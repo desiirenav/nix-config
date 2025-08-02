@@ -178,7 +178,7 @@ in {
 
         "Mod+Shift+P".action = power-off-monitors;
 
-        "Mod+X".action = spawn "fuzzel";
+        "Mod+X".action = spawn "${pkgs.anyrun}/bin/anyrun";
         "Mod+Return".action = spawn "kitty";
       };
     };
